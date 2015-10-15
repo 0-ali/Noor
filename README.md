@@ -8,19 +8,32 @@ http://noor.think3r.net
 ##Documentation
 <code>
 <?php
+
 require_once dirname(__FILE__) . "/Noor.php"; // Load Noor Class ...
-
+</code>
+<br>
+<code>
 $Noor = new Noor; // Call Noor Class
-
+</code>
+<br>
+<code>
 $Runn = $Noor->Get("Who is the owner of facebook "); // Get Answer  
 // Return is array 
+</code>
+<br>
+
+<code>
 var_dump($Runn);
 echo "<br />".$Runn['answer']."<br />" // Answer of question 
+
 .$Runn['confidence']."<br />" // confidence of answer
+
 .$Runn['title']; // title of answer
 
 ?>
 </code>
+<br>
+
 ## Contribution
 Please contribute :) .
 
